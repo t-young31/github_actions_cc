@@ -27,7 +27,7 @@ jobs:
         python -m pip install . --no-deps
     - name: Test
       run: |
-        py.test --cov-report xml --cov autode tests/
+        py.test --cov-report xml --cov example_module tests/
         
     - uses: codecov/codecov-action@v1
       with:
